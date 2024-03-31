@@ -1,0 +1,18 @@
+[package]
+name = "tocr-hwr-experiment"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+candle-core = { git = "https://github.com/huggingface/candle.git", version = "0.4.1", features = ["cuda"] }
+candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.4.1", features = ["cuda"] }
+candle-transformers = { git = "https://github.com/huggingface/candle.git", version = "0.4.1", features = ["cuda"] }
+clap = "4.5.1"
+hf-hub = "0.3.2"
+image = "0.25.0"
+serde = "1.0.197"
+serde_json = "1.0.114"
+tokenizers = { version = "0.15.2", features = ["onig"] }
